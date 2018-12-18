@@ -17,6 +17,16 @@ var QuoteService = Class({
     }
 })  
 
+var TestService = Class({
+    constructor: function(){},
+    getRandomQuote: function(){
+        return {
+            line: 'Cytat testowy.',
+            author: 'Testowy autor'
+        };
+    }
+});
+
 var SecondComponent = Component({
     selector:'second',
     template:'<p><em>{{quote.line}}</em>{{quote.author}}</p>'
@@ -41,7 +51,9 @@ var AppComponent = Component({
 var AppModule = NgModule({
     imports: [BrowserModule],
     declarations: [AppComponent, SecondComponent], 
-    providers:[QuoteService],  
+    providers:[
+        {provide: QuoteService, useClass: QuoteService}
+        ],  
     bootstrap: [AppComponent]
 })
 .Class({
