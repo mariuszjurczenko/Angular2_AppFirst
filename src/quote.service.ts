@@ -1,8 +1,6 @@
 export class QuoteService {
 
-  constructor() {
-    this.quotes = quotes2;
-  }
+  quotes = quotes2;
 
   getRandomQuote() {
     const randomIndex = Math.floor(Math.random() * this.quotes.length);

@@ -7,6 +7,8 @@ import {QuoteService} from './quote.service';
 })
 export class SecondComponent {
 
+  quote; 
+
   constructor( @Inject(QuoteService) quoteService) {
     quoteService.generateRandomQuotes(2000, quote => this.quote = quote);
   }
