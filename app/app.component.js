@@ -13,7 +13,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var AppComponent = exports.AppComponent = (_dec = (0, _core.Component)({
   selector: 'my-app',
-  template: '<h1>Angular 2.0. Hello World!!!</h1>\n                <second></second>'
+  template: '<h1>Angular 2.0. Hello World!!! MOD !!! </h1>\n                <second></second>'
 }), _dec(_class = function AppComponent() {
   _classCallCheck(this, AppComponent);
 }) || _class);
